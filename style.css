@@ -312,7 +312,7 @@ header {
   position: absolute;
   top: 15px;
   left: 15px;
-  background-color: #2ed573; /* Modern vibrant green */
+  background-color: #ff4757;
   color: white;
   font-size: 0.75rem;
   font-weight: bold;
@@ -736,14 +736,14 @@ header {
 /* ========================================== */
 /* FLOATING GREEN HELP CIRCLE ICON BUTTON     */
 /* ========================================== */
-.help-btn {
+.top-scroll-btn {
   position: absolute;
-  bottom: 25px;
-  right: 25px;
+  bottom: 80px;
+  right: 15px;
   background-color: #2ed573;
   color: white;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   border: none;
   border-radius: 50%;
   font-size: 1.2rem;
@@ -752,7 +752,9 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
 }
-
+.top-scroll-btn:hover{
+  background-color: #26af5f;
+}
 /* Direct Sizing Control for the SVG element */
 .social-svg {
   width: 18px;          /* Shrinks the width cleanly */
