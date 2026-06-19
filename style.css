@@ -4,15 +4,14 @@
   box-sizing: border-box;
 }
 header {
-  width: 100%; /* Changed from 110% to prevent horizontal scrolling */
+  width: 100%; 
   height: 500px;
   background-image: url("img/carousel-1.jpg");
-  background-size: cover; /* Changed from contain to fill the space without gaps */
-  background-position: top; /* Added to keep the main focus of the photo centered */
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
 }
 .carousel h1 {
-  /* YOUR EXACT STYLES */
   width: 400px;
   max-width: 800px;
   color: black;
@@ -20,14 +19,10 @@ header {
   font-weight: bold;
   text-align: left;
   line-height: 1.3;
-
-  /* THE POSITION FIXES */
   position: absolute;
-  top: 40%; /* Positions the text block down into the center area */
-  transform: translateY(
-    -50%
-  ); /* Locks the exact vertical center line of the text */
-  left: 10%; /* Anchors the block neatly to the left margin wall */
+  top: 40%;
+  transform: translateY(-50%);
+  left: 10%; 
 }
 
 .nav {
@@ -43,14 +38,13 @@ header {
 .nav .logo {
   font-size: 2.2rem;
   font-weight: bold;
-  color: #2ed573; /* Main logo color green */
+  color: #2ed573; 
 }
 
 .nav .logo .oo-red {
   color: #ff4757;
 }
 
-/* List container styling */
 .pages ul {
   display: flex;
   list-style: none;
@@ -60,35 +54,32 @@ header {
 /* Individual link styling */
 .pages a {
   text-decoration: none;
-  color: #2f3542;
+  color: black;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-/* Hover effect for interactive feel */
 .pages a:hover {
   color: #ff4757;
 }
-/* Core section container layout */
+ /* About Section */
 .about {
   display: flex;
   justify-content: center;
-  align-items: center; /* Aligns text and image perfectly in the center vertically */
-  gap: 40px; /* Modern replacement for manual margins */
+  align-items: center; 
+  gap: 40px; 
   max-width: 1200px;
-  margin: 60px auto; /* Centers the whole container on wide screens */
+  margin: 60px auto; 
   padding: 0 20px;
 }
 
-/* Image container fluid handling */
 .about-img img {
   width: 100%;
-  max-width: 450px; /* Keeps your image looking sharp and crisp */
-  height: auto; /* Maintains original aspect ratio without distortion */
-  border-radius: 8px; /* Smooths hard edges for a modern feel */
+  max-width: 450px; 
+  height: auto; 
+  border-radius: 8px; 
 }
 
-/* Typography and content space formatting */
 .about-content {
   max-width: 600px;
 }
@@ -105,9 +96,8 @@ header {
   margin-bottom: 20px;
 }
 
-/* Bullet list overrides */
 .about-content ul {
-  list-style: none; /* Removes bullets cleanly */
+  list-style: none; 
   padding: 0;
   margin-bottom: 25px;
 }
@@ -119,16 +109,14 @@ header {
   padding-left: 20px;
 }
 
-/* Functional checkmark icon replacement for your blank lists */
 .about-content ul li::before {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #2ed573; /* Matches your brand red/orange color scheme */
+  color: #2ed573; 
   font-weight: bold;
 }
 
-/* Primary View Button styling */
 .btn-view {
   background-color: #2ed573;
   color: white;
@@ -144,7 +132,7 @@ header {
 .btn-view:hover {
   background-color: #26af5f;
 }
-/* Section Boundaries */
+/* Feature Section */
 .feature {
   max-width: 1200px;
   margin: 80px auto;
@@ -152,7 +140,6 @@ header {
   font-family: "Arial", sans-serif;
 }
 
-/* Header Centering */
 .feature-header {
   text-align: center;
   margin-bottom: 50px;
@@ -168,11 +155,10 @@ header {
   color: #747d8c;
 }
 
-/* Core Grid Layout */
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Creates 3 perfectly equal columns */
-  gap: 30px; /* Uniform spacing between cards */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px; 
 }
 
 /* Individual Feature Cards */
@@ -188,7 +174,6 @@ header {
     box-shadow 0.3s ease;
 }
 
-/* Subtle liftoff interaction on hover */
 .feature-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
@@ -214,11 +199,10 @@ header {
   margin-bottom: 20px;
 }
 
-/* Clean text link button style */
 .btn-more {
   background: none;
   border: none;
-  color: #2ed573; /* Matches brand accent color */
+  color: #2ed573; 
   font-weight: bold;
   font-size: 0.95rem;
   cursor: pointer;
@@ -230,7 +214,8 @@ header {
   color: #e84118;
   text-decoration: underline;
 }
-/* Master Section Settings */
+
+/* Product Section */
 .product-section {
   max-width: 1200px;
   margin: 80px auto;
@@ -253,7 +238,6 @@ header {
   color: #747d8c;
 }
 
-/* Perfect 4-Column Fluid Grid Layout */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -261,9 +245,8 @@ header {
   margin-bottom: 50px;
 }
 
-/* Product Cards Geometry */
 .product-card {
-  position: relative; /* Essential to lock the 'New' badge position inside this box */
+  position: relative; 
   background: #ffffff;
   border: 1px solid #f1f2f6;
   border-radius: 12px;
@@ -280,7 +263,6 @@ header {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* Image bounding boxes to prevent varying height glitches */
 .product-img-box {
   width: 100%;
   height: 180px;
@@ -291,10 +273,9 @@ header {
 .product-img-box img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Keeps items shape regular without clipping stretching distortion */
+  object-fit: contain; 
 }
 
-/* Typography styles inside the cards */
 .product-card h4 {
   font-size: 1.2rem;
   color: #2f3542;
@@ -302,12 +283,11 @@ header {
 }
 
 .product-card .price {
-  color: #ff4757; /* Accent brand red color */
+  color: #ff4757; 
   font-weight: bold;
   font-size: 1.1rem;
 }
 
-/* Floating Badge styling */
 .badge-new {
   position: absolute;
   top: 15px;
@@ -322,7 +302,6 @@ header {
   z-index: 2;
 }
 
-/* Bottom Actions Control Placement */
 .product-actions {
   text-align: center;
 }
@@ -343,7 +322,7 @@ header {
   background-color: #26af5f;
 }
 
-/* Container Spacing */
+/* Review Section */
 .review-section {
   max-width: 1200px;
   margin: 100px auto 80px auto;
@@ -362,12 +341,11 @@ header {
   gap: 45px;
 }
 
-/* Master Card Setup */
 .review-card {
   background-color: #ffffff;
   border: 1px solid #f1f2f6;
   border-radius: 12px;
-  padding: 50px 30px 30px 30px; /* Protects text from the hanging quote */
+  padding: 50px 30px 30px 30px; 
   position: relative;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
   display: flex;
@@ -375,23 +353,17 @@ header {
   justify-content: space-between;
 }
 
-/* 
-   FIXED RAW TEXT QUOTE ICON
-   No background shape. Only the text color changes.
-*/
 .quote-icon {
   position: absolute;
-  top: -35px; /* Shifts the text character perfectly half inside / half outside */
+  top: -35px; 
   left: 25px;
-  font-size: 7rem; /* Large display size so the quote loops cross the line beautifully */
+  font-size: 7rem;
   font-family: Georgia, serif;
   line-height: 1;
-  background: none; /* Completely transparent background */
-  color: #2ed573; /* GREEN text color for side cards */
-  pointer-events: none; /* Stops text selection behavior on click */
+  background: none;
+  color: #2ed573;
 }
 
-/* Text & Info Boxes */
 .review-text {
   color: #57606f;
   font-style: italic;
@@ -428,22 +400,16 @@ header {
   display: block;
 }
 
-/* ========================================== */
-/* CENTER GREEN CARD OVERRIDES                */
-/* ========================================== */
-
 .review-card.center-box {
   background-color: #2ed573;
   border-color: #2ed573;
 }
 
-/* Changes the text color of the center quote mark to RED */
 .review-card.center-box .quote-icon {
-  color: #ff4757; /* RED text color for the quote mark */
-  background: none; /* Keeps background transparent */
+  color: #ff4757; 
+  background: none; 
 }
 
-/* Text flips to crisp white on green background */
 .center-box .review-text {
   color: #ffffff;
 }
@@ -461,7 +427,7 @@ header {
   opacity: 0.85;
 }
 
-/* Master Section Settings */
+/* Blog Section */
 .blog-section {
   max-width: 1200px;
   margin: 80px auto;
@@ -469,7 +435,6 @@ header {
   font-family: "Arial", sans-serif;
 }
 
-/* Header Description Centering */
 .blog-header {
   text-align: center;
   margin-bottom: 50px;
@@ -485,7 +450,6 @@ header {
   color: #747d8c;
 }
 
-/* Perfect 3-Column Grid Track */
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -497,20 +461,18 @@ header {
   background: #ffffff;
   border: 1px solid #f1f2f6;
   border-radius: 12px;
-  overflow: hidden; /* Sharp clipping wrapper corners */
+  overflow: hidden; 
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
 
-/* Hover lift effect */
 .blog-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* Fixed image container box to prevent alignment glitches */
 .blog-img-box {
   width: 100%;
   height: 220px;
@@ -520,16 +482,14 @@ header {
 .blog-img-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Crops image cleanly inside bounding frame box */
+  object-fit: cover;
   transition: transform 0.5s ease;
 }
 
-/* Subtle image scale-zoom effect on hover */
 .blog-card:hover .blog-img-box img {
   transform: scale(1.05);
 }
 
-/* Inner Text Card Padding Elements */
 .blog-content {
   padding: 25px;
 }
@@ -555,9 +515,8 @@ header {
   margin-bottom: 20px;
 }
 
-/* Link Actions Accent Colors Styling */
 .blog-link {
-  color: #2ed573; /* Organic brand accent green matching review code */
+  color: #2ed573;
   text-decoration: none;
   font-weight: bold;
   font-size: 0.95rem;
@@ -565,33 +524,31 @@ header {
 }
 
 .blog-link:hover {
-  color: #ff4757; /* Transitions to red on hover state context */
+  color: #ff4757;
 }
 
-/* Master Footer Background Settings */
+/* Main Footer */
 .main-footer {
-  background-color: #111111; /* Dark charcoal/black color from image */
-  color: #999999; /* Muted gray text color matching layout text */
+  background-color: #111111; 
+  color: #999999; 
   padding: 80px 0 0 0;
   font-family: "Arial", sans-serif;
   position: relative;
 }
 
-/* 4-Column Flex/Grid Track */
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   display: grid;
-  grid-template-columns: 2.5fr 2.5fr 2fr 3fr; /* Columns balanced exactly like image */
+  grid-template-columns: 2.5fr 2.5fr 2fr 3fr; 
   gap: 40px;
   padding-bottom: 60px;
 }
 
-/* Base Shared Column Settings */
 .footer-col h3 {
   font-size: 1.4rem;
-  color: #ffffff; /* White column headers */
+  color: #ffffff; 
   margin-bottom: 25px;
   font-weight: bold;
 }
@@ -603,19 +560,17 @@ header {
   margin-bottom: 20px;
 }
 
-/* Column 1: Foody Branding */
 .brand-info .logo {
   font-size: 2.2rem;
   font-weight: bold;
-  color: #2ed573; /* Main logo color green */
+  color: #2ed573;
   margin-bottom: 20px;
 }
 
 .brand-info .logo .oo-red {
-  color: #ff4757; /* The capital oo is red in the screenshot */
+  color: #ff4757; 
 }
 
-/* Circular Social Buttons */
 .social-links {
   display: flex;
   gap: 10px;
@@ -640,7 +595,6 @@ header {
   border-color: #2ed573;
 }
 
-/* Column 2: Address Info Row Lines */
 .contact-item {
   display: flex;
   align-items: flex-start;
@@ -654,7 +608,6 @@ header {
   margin-top: 4px;
 }
 
-/* Column 3: Quick Links Arrows */
 .quick-links a {
   display: block;
   color: #999999;
@@ -674,16 +627,15 @@ header {
   color: #2ed573;
 }
 
-/* Column 4: Inline Newsletter Form Fields */
 .subscribe-form {
-  position: relative; /* Combines input and button into one visual element block */
+  position: relative; 
   width: 100%;
   max-width: 320px;
 }
 
 .subscribe-form input[type="email"] {
   width: 100%;
-  padding: 14px 110px 14px 15px; /* Leaves right room padding for overlay button */
+  padding: 14px 110px 14px 15px; 
   background-color: transparent;
   border: 1px solid #333333;
   border-radius: 4px;
@@ -696,7 +648,7 @@ header {
   top: 5px;
   right: 5px;
   bottom: 5px;
-  background-color: #2ed573; /* Vibrant Green Sign Up Button overlay */
+  background-color: #2ed573; 
   color: #ffffff;
   border: none;
   padding: 0 20px;
@@ -710,11 +662,8 @@ header {
   background-color: #26af5f;
 }
 
-/* ========================================== */
-/* FOOTER BOTTOM COPYRIGHT ROW BLOCK          */
-/* ========================================== */
 .footer-bottom {
-  border-top: 1px solid #222222; /* Separator line graphic line edge slot */
+  border-top: 1px solid #222222; 
   padding: 25px 0;
 }
 
@@ -723,7 +672,7 @@ header {
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
-  justify-content: space-between; /* Pushes copyright left, credits right */
+  justify-content: space-between; 
   font-size: 0.9rem;
 }
 
@@ -733,9 +682,6 @@ header {
   border-bottom: 1px dotted #999999;
 }
 
-/* ========================================== */
-/* FLOATING GREEN HELP CIRCLE ICON BUTTON     */
-/* ========================================== */
 .top-scroll-btn {
   position: absolute;
   bottom: 80px;
@@ -755,29 +701,27 @@ header {
 .top-scroll-btn:hover{
   background-color: #26af5f;
 }
-/* Direct Sizing Control for the SVG element */
+
 .social-svg {
-  width: 18px;          /* Shrinks the width cleanly */
-  height: 18px;         /* Shrinks the height cleanly */
-  fill: #ffffff;        /* Sets vector path color to high-contrast white */
+  width: 18px;         
+  height: 18px;         
+  fill: #ffffff;      
   display: inline-block;
   vertical-align: middle;
   transition: fill 0.3s ease;
 }
 
-/* Hover state handler */
 .social-links a:hover .social-svg {
-  fill: #ffffff;        /* Keeps the icon white when the circle breaks green */
+  fill: #ffffff;     
 }
 
-/* Re-verify your master circular button container rule includes these flex parameters */
 .social-links a {
   border: 1px solid #ffffff;
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  display: flex;        /* Essential to align elements inside the circle */
-  align-items: center;  /* Centers horizontally */
-  justify-content: center; /* Centers vertically */
+  display: flex;       
+  align-items: center; 
+  justify-content: center;
   text-decoration: none;
 }
